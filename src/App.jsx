@@ -13,6 +13,7 @@ import FAQ from './components/faq/FAQ';
 import Enquiry from './components/enquiry/Enquiry';
 import SocialMedia from './components/SocialMedia';
 import ScrollToTop from './components/ScrollToTop';
+import AboutMain from './components/about/AboutMain';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/properties" element={<PropertiesMain />} />
             <Route path="/vlog" element={<Vlog />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/about" element={<AboutMain />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/sell" element={<SellWithUs />} />
             <Route path="/faq" element={<FAQ />} />

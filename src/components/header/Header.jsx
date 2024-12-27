@@ -23,6 +23,10 @@ function Header() {
             Home
             <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
           </Link>
+          <Link to="/about" className="relative group">
+            About
+            <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
+          </Link>
           <Link to="/properties" className="relative group">
             Properties
             <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -31,10 +35,7 @@ function Header() {
             Vlog
             <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link to="/about" className="relative group">
-            About
-            <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
-          </Link>
+         
           <Link to="/contact" className="relative group">
             Contact
             <span className="absolute left-0 bottom-0 w-0 h-[3px] bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
@@ -67,9 +68,10 @@ function Header() {
       >
         <nav className="flex flex-col space-y-6 p-6 text-lg font-medium">
           <Link to="/" className="hover:text-blue-600" onClick={closeMenu}>Home</Link>
+          <Link to="/about" className="hover:text-blue-600" onClick={closeMenu}>About</Link>
           <Link to="/properties" className="hover:text-blue-600" onClick={closeMenu}>Properties</Link>
           <Link to="/vlog" className="hover:text-blue-600" onClick={closeMenu}>Vlog</Link>
-          <Link to="/about" className="hover:text-blue-600" onClick={closeMenu}>About</Link>
+          
           <Link to="/contact" className="hover:text-blue-600" onClick={closeMenu}>Contact</Link>
           <Link to="/sell" className="hover:text-blue-600" onClick={closeMenu}>Sell With Us</Link>
           <Link to="/faq" className="hover:text-blue-600" onClick={closeMenu}>FAQ</Link>
